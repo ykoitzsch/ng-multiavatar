@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="link" width="500" alt="Angular Multiavatar">
+  <img src="https://raw.githubusercontent.com/ykoitzsch/ng-multiavatar/master/avatars.png" width="500" alt="Angular Multiavatar">
   <br>
   <h1>ng-multiavatar</h1>
   <br>
@@ -24,14 +24,6 @@ https://multiavatar.com/
 npm install ng-multiavatar 
 ```
 
-## Dependencies
-
-Latest version available for each version of Angular
-
-| ng-multiavatar | Angular |
-| --------- | ------- |
-| current   | >= 10.x |
-
 ### Quickstart
 
 ```ts
@@ -49,7 +41,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'your-component',
-  template: ` <ng-multiavatar name="Jon Snow"></ng-multiavatar> `,
+  template: ` <ng-multiavatar seed="Jon Snow"></ng-multiavatar> `,
 })
 export class YourComponent {}
 
@@ -66,6 +58,7 @@ export class YourComponent {}
 | ------- | -------- | ------- |
 | string | ✓        | `Binx Bond` |
 
+
 Use this property to set the seed for the avatar generation.
 
 
@@ -73,7 +66,7 @@ Use this property to set the seed for the avatar generation.
 
 ```ts
 <ng-multiavatar
-  [name]="seed123abc%&_+"
+  seed="seed123abc%&_+"
 ></ng-multiavatar>
 ```
 
@@ -83,6 +76,7 @@ Use this property to set the seed for the avatar generation.
 | ------- | -------- | ------- |
 | boolean | ✕        | `true` |
 
+
 If this is `false`, the final avatar will be without the circle background.
 
 
@@ -90,7 +84,7 @@ If this is `false`, the final avatar will be without the circle background.
 
 ```ts
 <ng-multiavatar
-  [name]="Steve Jobs"
+  seed="Steve Jobs"
   [hasBackground]="false"
 ></ng-multiavatar>
 ```
@@ -101,12 +95,15 @@ If this is `false`, the final avatar will be without the circle background.
 | ------- | -------- | ------- |
 | object | ✕        | `undefined` |
 
+
 Pass an object to force a specific initial version. The config is an object of type `AvatarConfig`. This object has the properties: `part` and `theme`. 
+
 
 | key    | possible values | 
 | ------- | -------- | 
 | part | '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15'  |
 | theme | 'A', 'B', 'C'        |
+
 ###### Example
 
 ```ts

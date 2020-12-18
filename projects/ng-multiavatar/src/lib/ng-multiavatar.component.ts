@@ -10,7 +10,7 @@ export type AvatarConfig = {
 @Component({
   selector: 'ng-multiavatar',
   template: `
-    <div class="multiavatar-svg" [ngStyle]="{'height': size}" [innerHTML]="svg"></div>
+    <div class="multiavatar-svg" [innerHTML]="svg"></div>
   `,
   styles: [
   ]
