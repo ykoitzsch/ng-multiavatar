@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-multiavatar": {
+      "projectType": "library",
+      "root": "projects/ng-multiavatar",
+      "sourceRoot": "projects/ng-multiavatar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ng-multiavatar/tsconfig.lib.json",
+            "project": "projects/ng-multiavatar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-multiavatar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-multiavatar/src/test.ts",
+            "tsConfig": "projects/ng-multiavatar/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-multiavatar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-multiavatar/tsconfig.lib.json",
+              "projects/ng-multiavatar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-multiavatar"
 }

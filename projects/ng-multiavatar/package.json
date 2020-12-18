@@ -1,0 +1,17 @@
+{
+  "name": "ng-multiavatar",
+  "version": "0.0.5",
+  "author": {
+    "email": "y.koitzsch@gmx.at",
+    "name": "ykoitzsch",
+    "url": "https://www.npmjs.com/~ykoitzsch"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.3",
+    "@angular/core": "^11.0.3"
+  },
+  "dependencies": {
+    "@multiavatar/multiavatar": "^1.0.3",
+    "tslib": "^2.0.0"
+  }
+}
