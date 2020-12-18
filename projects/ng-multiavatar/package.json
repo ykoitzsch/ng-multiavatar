@@ -1,10 +1,17 @@
 {
   "name": "ng-multiavatar",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "email": "y.koitzsch@gmx.at",
     "name": "ykoitzsch",
     "url": "https://www.npmjs.com/~ykoitzsch"
+  },
+  "description": "A simple angular wrapper for @multiavatar/multiavatar javascript library",
+  "tags": ["avatar", "angular", "angular2", "svg", "ng-multiavatar", "multiavatar", "typescript"],
+  "homepage": "https://github.com/ykoitzsch/ng-multiavatar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykoitzsch/ng-multiavatar"
   },
   "peerDependencies": {
     "@angular/common": "^11.0.3",

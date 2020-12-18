@@ -1,24 +1,131 @@
-# NgMultiavatar
+<div align="center">
+  <img src="link" width="500" alt="Angular Multiavatar">
+  <br>
+  <h1>ng-multiavatar</h1>
+  <br>
+  <a href="https://www.npmjs.org/package/ng-multiavatar">
+    <img src="https://badge.fury.io/js/ng-multiavatar.svg" alt="npm">
+  </a> 
+  </a>
+  <br>
+  <br>
+  <br>
+</div>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+This is a simple angular wrapper for  [multiavatar-js](https://github.com/multiavatar/Multiavatar) library by [multiavatar.com](https://multiavatar.com/).
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name --project ng-multiavatar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-multiavatar`.
-> Note: Don't forget to add `--project ng-multiavatar` or else it will be added to the default project in your `angular.json` file. 
+https://multiavatar.com/
 
-## Build
+### Installation
 
-Run `ng build ng-multiavatar` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+npm install ng-multiavatar 
+```
 
-## Publishing
+## Dependencies
 
-After building your library with `ng build ng-multiavatar`, go to the dist folder `cd dist/ng-multiavatar` and run `npm publish`.
+Latest version available for each version of Angular
 
-## Running unit tests
+| ng-multiavatar | Angular |
+| --------- | ------- |
+| current   | >= 10.x |
 
-Run `ng test ng-multiavatar` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Quickstart
 
-## Further help
+```ts
+// app.module.ts
+import { NgModule } from '@angular/core';
+import { NgMultiavatarModule } from 'ng-multiavatar';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@NgModule({
+  imports: [NgMultiavatarModule],
+})
+export class AppModule {}
+
+// your.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'your-component',
+  template: ` <ng-multiavatar name="Jon Snow"></ng-multiavatar> `,
+})
+export class YourComponent {}
+
+// That's it!
+// You can, of course, customize it. Check out the API Reference below.
+```
+
+
+### API Reference
+
+#### `seed`
+
+| Type    | Required | Default |
+| ------- | -------- | ------- |
+| string | ✓        | `Binx Bond` |
+
+Use this property to set the seed for the avatar generation.
+
+
+###### Example
+
+```ts
+<ng-multiavatar
+  [name]="seed123abc%&_+"
+></ng-multiavatar>
+```
+
+#### `hasBackground`
+
+| Type    | Required | Default |
+| ------- | -------- | ------- |
+| boolean | ✕        | `true` |
+
+If this is `false`, the final avatar will be without the circle background.
+
+
+###### Example
+
+```ts
+<ng-multiavatar
+  [name]="Steve Jobs"
+  [hasBackground]="false"
+></ng-multiavatar>
+```
+#### `config`
+**IMPORTANT!! This property overrides any seed value!**
+
+| Type    | Required | Default |
+| ------- | -------- | ------- |
+| object | ✕        | `undefined` |
+
+Pass an object to force a specific initial version. The config is an object of type `AvatarConfig`. This object has the properties: `part` and `theme`. 
+
+| key    | possible values | 
+| ------- | -------- | 
+| part | '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15'  |
+| theme | 'A', 'B', 'C'        |
+###### Example
+
+```ts
+<ng-multiavatar
+  [config]="{'part':'01', 'theme':'C'}"
+></ng-multiavatar>
+```
+
+### License ###
+
+[LICENSE](https://multiavatar.com/license/)
+
+
+
+### Screenshots ###
+
+<img src="https://multiavatar.com/press/img/screenshots/screenshot-02.png?v=001">
+
+
+
+> GitHub [@ykoitzsch](https://github.com/ykoitzsch) &nbsp;&middot;&nbsp;
+> Twitter [@isleepcode](https://twitter.com/isleepcode)

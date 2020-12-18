@@ -17,9 +17,8 @@ export type AvatarConfig = {
 })
 export class NgMultiavatarComponent implements OnInit {
 
-  @Input() name = 'Binx Bond';
-  @Input() size = '150px';
-  @Input() background = true;
+  @Input() seed = 'Binx Bond';
+  @Input() hasBackground = true;
   @Input() config: AvatarConfig;
 
   svg: SafeHtml = '';
@@ -27,7 +26,7 @@ export class NgMultiavatarComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    const svgCode = multiavatar(this.name, !this.background, this.config);
+    const svgCode = multiavatar(this.seed, !this.hasBackground, this.config);
     this.svg = this.sanitizer.bypassSecurityTrustHtml(svgCode);
   }
 
