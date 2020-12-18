@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="link" width="500" alt="Angular Multiavatar">
+  <img src="avatars.png" width="500" alt="Angular Multiavatar">
   <br>
   <h1>ng-multiavatar</h1>
   <br>
