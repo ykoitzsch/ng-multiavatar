@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import multiAvatar from '@multiavatar/multiavatar/dist/esm'
+import multiavatar from '@multiavatar/multiavatar';  
+
 
 export type AvatarConfig = {
   part: '01' | '02' | '03' | '04' | '05' | '06' | '07' | '08' | '09' | '10' | '11' | '12' | '13' | '14' | '15'
@@ -27,7 +28,7 @@ export class NgMultiavatarComponent implements OnInit {
   constructor(private readonly sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    const svgCode = multiAvatar(this.seed, !this.hasBackground, this.config);
+    const svgCode = multiavatar(this.seed, !this.hasBackground, this.config);
     this.svg = this.sanitizer.bypassSecurityTrustHtml(svgCode);
   }
 

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ng-multiavatar --prod",
+    "build:lib": "ng build ng-multiavatar --configuration=production",
     "test": "ng test",
     "lint": "ng lint"
   },
@@ -17,6 +17,7 @@
     "@angular/platform-browser": "^15.0.2",
     "@angular/platform-browser-dynamic": "^15.0.2",
     "@angular/router": "^15.0.2",
+    "ng-multiavatar": "./dist/ng-multiavatar",
     "rxjs": "~6.6.0",
     "tslib": "^2.6.3",
     "zone.js": "~0.11.4"
@@ -28,7 +29,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.6.0",
+    "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.1.0",

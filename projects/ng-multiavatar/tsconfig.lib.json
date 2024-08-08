@@ -6,18 +6,18 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
+    "module": "ESNext",  
+    "target": "ESNext",  
+    "moduleResolution": "Node",  
     "types": [
       "node",
     ],
-    "lib": [
-      "dom",
-      "es2018"
-    ]
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
   },
   "exclude": [
     "src/test.ts",

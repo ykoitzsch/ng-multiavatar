@@ -7,20 +7,12 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
-    "paths": {
-      "ng-multiavatar": [
-        "dist/ng-multiavatar/ng-multiavatar",
-        "dist/ng-multiavatar"
-      ]
-    },
-    "useDefineForClassFields": false
+    "module": "es2020",  
+    "target": "es2022",  
+    "moduleResolution": "node", 
+    "useDefineForClassFields": false,
+    "lib": ["es2020", "dom"] ,
+    "esModuleInterop": true, 
   }
 }
