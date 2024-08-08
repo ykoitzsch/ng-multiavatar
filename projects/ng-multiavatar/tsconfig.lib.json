@@ -8,7 +8,7 @@
     "declarationMap": true,
     "inlineSources": true,
     "types": [
-      "node"
+      "node",
     ],
     "lib": [
       "dom",

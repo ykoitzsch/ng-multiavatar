@@ -1,6 +1,6 @@
 {
   "name": "ng-multiavatar",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "author": {
     "email": "y.koitzsch@gmx.at",
     "name": "ykoitzsch",
@@ -14,7 +14,9 @@
     "svg",
     "ng-multiavatar",
     "multiavatar",
-    "typescript"
+    "typescript",
+    "ng-avatar",
+    "ngx-avatar"
   ],
   "homepage": "https://github.com/ykoitzsch/ng-multiavatar",
   "repository": {
@@ -22,11 +24,11 @@
     "url": "https://github.com/ykoitzsch/ng-multiavatar"
   },
   "peerDependencies": {
-    "@angular/common": "^11.0.3",
-    "@angular/core": "^11.0.3"
+    "@angular/common": ">=15.0.2",
+    "@angular/core": ">=15.0.2"
   },
   "dependencies": {
-    "@multiavatar/multiavatar": "^1.0.3",
-    "tslib": "^2.0.0"
+    "@multiavatar/multiavatar": "1.0.7",
+    "tslib": "2.3.0"
   }
 }
