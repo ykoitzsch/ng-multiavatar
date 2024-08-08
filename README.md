@@ -1,7 +1,7 @@
 <div align="center">
   <img src="avatars.png" width="500" alt="Angular Multiavatar">
   <br>
-  <h1>ng-multiavatar</h1>
+  <h1>ng-multiavatar / an angular avatar library</h1>
   <br>
   <a href="https://www.npmjs.org/package/ng-multiavatar">
     <img src="https://badge.fury.io/js/ng-multiavatar.svg" alt="npm">
@@ -11,7 +11,7 @@
   <br>
   <br>
 </div>
-
+Angular avatar library.
 This is a simple angular wrapper for  [multiavatar-js](https://github.com/multiavatar/Multiavatar) library by [multiavatar.com](https://multiavatar.com/).
 
 ## Demo

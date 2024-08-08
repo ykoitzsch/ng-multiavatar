@@ -29,10 +29,10 @@ npm install ng-multiavatar
 ```ts
 // app.module.ts
 import { NgModule } from '@angular/core';
-import { NgMultiavatarModule } from 'ng-multiavatar';
+import { NgMultiavatarComponent } from 'ng-multiavatar';
 
 @NgModule({
-  imports: [NgMultiavatarModule],
+  imports: [NgMultiavatarComponent],
 })
 export class AppModule {}
 
