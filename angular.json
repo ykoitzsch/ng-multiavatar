@@ -28,18 +28,6 @@
             "tsConfig": "projects/ng-multiavatar/tsconfig.spec.json",
             "karmaConfig": "projects/ng-multiavatar/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ng-multiavatar/tsconfig.lib.json",
-              "projects/ng-multiavatar/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     }
